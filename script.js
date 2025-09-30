@@ -11,7 +11,7 @@ for (let i = 1; i <= 9; i++) {
 const blockIdInput = document.getElementById("block_id");
 const colorInput = document.getElementById("colour_id");
 const changeButton = document.getElementById("change_button");
-const resetButton = document.getElementById("reset");
+const resetButton = document.getElementById("reset_button");
 
 changeButton.addEventListener("click", function () {
   const blockId = blockIdInput.value;
