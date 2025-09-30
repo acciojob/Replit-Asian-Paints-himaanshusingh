@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Grid Application</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Interactive Color Grid</h1>
+      <div class="input-section">
+        <div class="input-group">
+          <label for="block_id">Block ID (1-9):</label>
+          <input type="number" id="block_id" min="1" max="9" placeholder="Enter block ID"/>
+        </div>
+        <div class="input-group">
+          <label for="colour_id">Color:</label>
+          <input type="text" id="colour_id" placeholder="Enter color name or hex"/>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="change_button">Change Color</button>
+        <button id="reset">Reset</button>
+      </div>
+      <div id="grid-container">
+        <!-- Grid items will be created by JavaScript -->
+      </div>
+      <div class="instructions">
+        <h3>How to use:</h3>
+        <ul>
+          <li>Enter a block ID (1-9) and a color name or hex code</li>
+          <li>
+            Click "Change Color" to apply the color to the specified block
+          </li>
+          <li>Click "Reset" to clear all colors and return to default state</li>
+          <li>Each grid block is numbered for easy identification</li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
